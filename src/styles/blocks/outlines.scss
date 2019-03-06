@@ -1,0 +1,30 @@
+/*body {
+  background: white url("../src/img/cat-energy-index-mobile.png") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 3200px;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background: white url("../src/img/cat-energy-index-tablet.jpg") no-repeat 50% 0;
+    background-size: 768px auto;
+    min-height: 5200px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  body {
+    background: white url("../src/img/cat-energy-index-desktop.jpg") no-repeat 50% 0;
+    background-size: 1440px auto;
+  }
+}*/
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+}

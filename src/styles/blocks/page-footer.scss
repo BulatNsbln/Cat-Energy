@@ -1,0 +1,42 @@
+.page-footer {
+  width: 320px;
+  margin: 5px auto 0 auto;
+  //
+  /*border: 1px solid black;*/
+  min-height: 711px;
+}
+
+.page-footer__social {
+
+  //
+  /*border: 1px solid black;*/
+  min-height: 236px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 768px;
+    margin-top: 0;
+    //
+    min-height: 746px;
+  }
+  .page-footer__social {
+
+    //
+    min-height: 145px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1440px;
+
+    //
+    min-height: 549px;
+  }
+  .page-footer__social {
+
+    //
+    min-height: 145px;
+  }
+}

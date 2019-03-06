@@ -1,0 +1,101 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+
+  //
+}
+
+.page-main__header {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 4px;
+  background: url("../../img/index-background-mobile.png") no-repeat;
+  //
+  /*border: 1px solid black;*/
+  min-height: 480px;
+}
+
+.page-main__header-title {
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.page-main__header-text {
+  text-align: center;
+  margin: 0;
+  margin-top: 25px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.page-main__header-button  {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  border: none;
+  background-color: green;
+  padding: 10px 73px;
+  text-decoration: none;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+}
+
+.page-main__header-image {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 768px;
+  }
+
+  .page-main__header {
+    width: 709px;
+    margin-top: 50px;
+    //
+    min-height: 806px;
+  }
+
+  .page-main__header-button_top  {
+    display: inline;
+  }
+  .page-main__header-button_bottom  {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1440px;
+  }
+  .page-main__header {
+    width: 1220px;
+    margin-top: 12px;
+    //
+    min-height: 560px;
+  }
+
+  .page-main__header-button_top  {
+    display: inline;
+  }
+  .page-main__header-button_bottom  {
+    display: none;
+  }
+}

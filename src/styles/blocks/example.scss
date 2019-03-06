@@ -1,0 +1,140 @@
+.example {
+  margin-top: 50px;
+  //
+  min-height: 705px;
+}
+
+.example__title {
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  padding-top: 17px;
+  padding-left: 20px;
+}
+
+.example__text {
+  width: 266px;
+  height: 103px;
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.example__property-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+
+}
+
+.example__property-item {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid grey;
+  border-radius: 2px;
+
+  &_1::before {
+    content: 'снижение веса';
+    position: absolute;
+    background-color: #f2f2f2;
+
+    top: 50px;
+    left: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    
+    width: 54px;
+    height: 19px;
+    color: #444444;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+
+  &_2::before {
+    content: 'затрачено времени';
+    position: absolute;
+    background-color: #f2f2f2;
+
+    top: 50px;
+    left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+    width: 54px;
+    height: 19px;
+    color: #444444;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+}
+
+.example__property-title {
+  color: #111111;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.example__costs {
+  text-align: center;
+  margin: 0;
+  margin-top: 30px;
+
+  color: #111111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__compare-slider_toggle {
+  color: #111111;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__compare {
+  margin-top: 40px;
+}
+
+.example__after {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    margin-top: 57px;
+    //
+    min-height: 1082px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    margin-top: 20px;
+    //
+    min-height: 652px;
+  }
+}

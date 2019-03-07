@@ -14,28 +14,28 @@
     <header class="page-header">
         <div class="page-header__wrapper">
             <a class="page-header__logo">
-                <img src="img/logo-mobile.svg.png" class="page-header__logo-image page-header__logo-image_mobile" width="33px" height="38px" alt="логотип сайта">
+                <div class="page-header__logo-image"></div>
             </a>
             <a class="page-header__name">
-                <img src="img/logo-mobile-header.svg.png" class="page-header_logo-image" width="101px" height="18px" alt="меню">
+                <div class="page-header__logo-image_mobile"></div>
             </a>
         </div>
         <nav class="main-nav main-nav--opened ">
-            <button type="button" class="main-nav__toggle ">
+            <button type="button" class="main-nav__toggle">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item_active">
+            <ul class="main-nav__list">
+                <li class="main-nav__list-item main-nav__list-item_active">
                     <a href="./index.html">
                         Главная
                     </a>
                 </li>
-                <li class="site-list__item">
+                <li class="main-nav__list-item">
                     <a href="./catalog.html">
                         Каталог продукции
                     </a>
                 </li>
-                <li class="site-list__item">
+                <li class="main-nav__list-item">
                     <a href="./form.html">
                         Подбор программы
                     </a>
@@ -60,7 +60,7 @@
             <a type="button" class="button page-main__header-button" href="form.html">
                 Подобрать программу
             </a>
-            <img class="page-main__header-image" src="img/index-can-mobile.png.png" alt="Фотография питания для кошек" width="280px" height="270px">
+            <div class="page-main__header-image"></div>
         </header>
 
         <section class="categories">
@@ -149,32 +149,26 @@
                     <p class="example__property-title">
                         5 кг
                     </p>
-                    <!--<p class="example__property-text">
-                        снижение веса
-                    </p>-->
                 </li>
                 <li class="example__property-item example__property-item_2">
                     <p class="example__property-title">
                         60 дней
                     </p>
-                    <!--<p class="example__property-text">
-                        затрачено времени
-                    </p>-->
                 </li>
             </ul>
             <p class="example__costs">
                 затраты на питание: 15 000 руб.
             </p>
-            <div class="example__compare">
-                <img src="img/before-mobile.png" class="example__before" alt="Фото кота перед употреблением cat energy">
-                <img src="img/after-mobile.png" class="example__after" alt="Фото кота после употреблением cat energy">
+            <div class="example__compare example__compare_prev ">
+                <div class="example__compare-photo"></div>
                 <div class="example__compare-slider ">
-                    <span class="example__compare-slider_toggle example__compare-slider_prev">
+                    <button type="button" class="example__compare-slider_toggle example__compare-slider_prev">
                         БЫЛО
-                    </span>
-                    <span class="example__compare-slider_toggle example__compare-slider_next">
+                    </button>
+                    <div class="example__compare-indicator"></div>
+                    <button type="button" class="example__compare-slider_toggle example__compare-slider_next">
                         СТАЛО
-                    </span>
+                    </button>
 
                 </div>
             </div>
@@ -184,7 +178,7 @@
     <footer class="page-footer">
         <section class="contacts">
             <div class="contacts__wrapper">
-               <!--<h2 class="contacts__title">
+               <h2 class="contacts__title">
                     ПРИГЛАШАЕМ
                     <br> К СОТРУДНИЧЕСТВУ
                     <br> ДИЛЕРОВ!
@@ -192,34 +186,56 @@
                 <p class="contacts__address">
                     ул. Большая
                     <br> Конюшенная, д. 19/8
-                    <br>
-                    <br> Санкт-Петербург
-                </p>-->
+                    <br> <span>Санкт-Петербург</span>
+                </p>
             </div>
-            <section class="contacts__map map">
-                <!--<div class="map__container"></div>
-                <img src="#"class="map__baloon" alt="Балун на карту, указывающий на расположпение на карте офиса компании">-->
-            </section>
+            <div class="contacts__map-container"></div>
         </section>
 
 
 
         <section class="page-footer__social social">
-            <!--<img src="#" class="page-footer__logo">
+            <img src="../img/footer-logo.svg.png" class="page-footer__logo" width="128" height="24">
             <ul class="social__list">
                 <li class="social__item">
-                    <a class="social__link social__link-vkontakte">Мы в Вконтакте</a>
+                    <a class="social__link social__link-vkontakte" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12" viewBox="0 0 22 12">
+                            <g><g transform="translate(-93 -3067)">
+                                <image width="22" height="12" transform="translate(93 3067)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABo0lEQVQ4T33TO+jPYRTH8dcfkzC5LCRM7imUe5RyWYRCUsLGRoRFwuY2iJRr/AdJQggDCzK4lsKgkGJgkTvpk/OrL/14ludyznmfy3NOBxZiArr6vd5iDz5iF5ahd8m+4xbm4V29xX5EnbN1x80OfMM9vMYnjMNVrMUT9MUsvEcPdGIdTmEU7uJCA9wnjIDP4gsWlXBagYfiJV5gBS6W/H5ldLSNbVTisGfASSMRT8HtMj6PLpiLJiji3LfhA85hOJ6V3apyOjbgrIOV1kT8xCA8wnqsKVBKkPUAB7AF+7C13vNP1yu7ky1w6vIY28tjdBfjBKIzBg8LkPrPwDXMwQ/0q0yOY0P0WuCcl+AQRjdSC2AAjjU+ZwhmIjX+XO+Jfn4FEEd/gHM/jcGYXO3W4P33OB2XsQk724F74U5FvABf2+BS/x3VOYcb8rTkGezFxmYpWjr9cQNvsBxP/4IfwTCMxG5sbsjzgVf+BY5eJi2A2RXFpRqWTGP6NO32qgYj9/01C7FditXtIm4GOBUrMQkD0Q3PkSHK8KRb0nrjG0YpX+cvz5JjNytLkBkAAAAASUVORK5CYII="/>
+                            </g></g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item social__item_insta">
+                    <a class="social__link social__link-instagram" href="#">
+                        <span class="visually-hidden">Instagram</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                            <g><g transform="translate(-152 -3065)">
+                                <image width="16" height="16" transform="translate(152 3065)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABwElEQVQ4T6WTP2sUURTFz7nZ0WxEMa37573ZLBY2Vlr4ERS1kyDpok2KIAQVv4BgICBpg52IaGXEr2BhZ+1k573dja2i5I+s+668YVeWNbtGvM3AfXN+786ZcwkAxph0BlgHcBXAXOxNqX2S736qPvTe5xyIPwDYVpFNVfXT1CQNQ1gFcKMPXGbDmNcAvrW8X/7LzahWq+WTQGWn280axjwDcCYC9lTkSp7nH8cBtVrtXOx1Op3P8blgzJYCd/rABRE5wRDeR4AGct4593UISOv16xTZgGqz6JGZhrBGMih5a//gYKVcLiei+uUPQCEmX6rqvV4Iz6M+EVki+VRVF/N2+23sWWvPHgloGPNJVdfzdntr9JPSev0uRe63nDs/EdCsVKqhVPKBPOWcOxwFWGtnRXWvF0ItenLkBEOAJMlclmU//hkQBakxOwAe597H3/S7UmOWCTxqeV8YO9GDprU3g+oLBVZnkqQwsd/rLRHYFPJ25tybqYB4OIBsxIEGI+RCrg3F44CJQYqexJez3d3ueMjSNL1YBGnB2leq+v04UR6FxCiTPP1fyxTIS4zUuJEl8omqXjvuOveBB8459wuOfBHYNKilbQAAAABJRU5ErkJggg=="/>
+                            </g></g>
+                        </svg>
+                    </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link-instagram">Мы в Instagram</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link-facebook">Мы в Facebook</a>
+                    <a class="social__link social__link-facebook" href="#">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="19" viewBox="0 0 10 19">
+                            <g><g transform="translate(-208 -3063)">
+                                <image width="10" height="19" transform="translate(208 3063)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAA00lEQVQ4T93RMUrDQRDF4S8g2mmsNAQ1nkAPIBKw1UI8g7fwDuYW1jlB6pAiaCuiiIGkUtBSUAZmw/oHC1unWYb9zbz3mJaftYsrnGG7/mpVzR4mGGGAe3wihm9r8AaruGio9PBYwHg/cJobg73GOVbQLWAXL+hgjrUcvMRTTAXYxzqGGWCBHTznxrcCfmGWxk/wgC2M02v47sTGAPeLRCNItIeY/hks0kcZKjzfNaVjddS0stDGK47xXsIUW7XXAm5imfrfggd544281K+pmxdcgt+g30W8bs2ZkAAAAABJRU5ErkJggg=="/>
+                            </g></g>
+                        </svg>
+                    </a>
                 </li>
             </ul>
-            <div class="copyright">
-                <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </div>-->
+            <div class="social__copyright">
+                <a class="button social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <svg class="social__copyright-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+                    <g><g transform="translate(-273 -3126)">
+                        <image width="27" height="34" transform="translate(273 3126)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAACqElEQVRIS7WWgVEdMQxElwoCFSQl0AFQAVABoYJABUAFQAWECoAKklSQpAOogKSCZJ7HYvbr2747GDxz8//d+bTSaiV5Q6trU9J2fcQv9x8lfarPdtN+br/XZ4+SniT9kfSrPuOX+7I2JH2rxsJgw96bH+HII2D/Gqayd3/ZXK+IJqLESa4PDVZWTDvYXjL45nCMMdgrNEZk/H+vVTBeA/ZZ0pmkU0n3M71bDIY6LyW5IlHiseWyhz0bDPkDQkSsC0lfJX2RdGLPrlzmCXUWGMagDMBWFB4tCoZaHMlrCAZVRIMxJD+Vn4O6nxLAKfZHYQPcBGtRNqInR3Be6cUOEQJKxGtg5II89Chzw0RAxK3FO6gnxwBhF5ZWpM/9HMrYR5GyF0M9UE9FccrrDK4PB4ryKKAL7/H8WhL3vfUz2ljuja3ktoxgHKD9WndER73FBOAbIruxibESGQmNWkIUUPQyHhIiNGKMb37XXJMrOgqRknsUGpHDwlq7cp5HdYMhogoRAEDXjyLH9lCN3ogxgoJCmbluSheX9GBUevDQyRSJNSzqO0k/6pQOb91Td4bijekexheDQRUf3Uo6qjmKugGYPDhtr46M3HFFkSMYzhfRJwdKL68WRUZOyBeJ30lCwFhR12AtAoNCagRA5IwQiJLckCOe9w5ILRVPjhgMRl6iXvgdUdmrzzWwrU4R+8yK3klZeGSjzoPTz7moo7G2hh97Xe6RrlHhxzcwURyjkH0GhZJyEYdxp3bU0vJ5paQhugbIUIMwYk31x5YY3Zl4j8BwvpyIfeVOPUWTf5tpXpsEvYNppha5452PkADKQ7I740anYB/vYdj7Yz6vsIf33ek958jd8pw8kF8AWaPIX6ieAxab/Qzp0icSxDS5loBhzKlzSieB2PAfiSvkSlCgzyoAAAAASUVORK5CYII="/>
+                    </g></g>
+                </svg>
+            </div>
         </section>
     </footer>
 </body>

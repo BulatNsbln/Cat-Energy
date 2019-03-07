@@ -12,7 +12,7 @@
   margin-top: 4px;
   background: url("../../img/index-background-mobile.png") no-repeat;
   //
-  /*border: 1px solid black;*/
+  //border: 1px solid black;
   min-height: 480px;
 }
 
@@ -44,7 +44,7 @@
   bottom: 0px;
   left: 20px;
   border: none;
-  background-color: green;
+  background-color: #68b738;
   padding: 10px 73px;
   text-decoration: none;
   color: #ffffff;
@@ -59,6 +59,9 @@
 .page-main__header-image {
   margin-top: 30px;
   margin-left: 20px;
+  width: 280px;
+  height: 270px;
+  background: url("../../img/index-can-mobile.png.png") no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,15 +72,47 @@
   .page-main__header {
     width: 709px;
     margin-top: 50px;
+    background: none;
     //
     min-height: 806px;
   }
-
-  .page-main__header-button_top  {
-    display: inline;
+  .page-main__header-image {
+    margin: 0;
+    margin-top: 18px;
+    width: 709px;
+    height: 609px;
+    background: url("../../img/index-can-tablet.jpg.png") no-repeat;
   }
-  .page-main__header-button_bottom  {
-    display: none;
+  .page-main__header-title {
+    color: #111111;
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    padding: 0;
+    text-align: left;
+    margin-top: 3px;
+    margin-left: 88px;
+  }
+
+  .page-main__header-text {
+    color: #111111;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 43px;
+    margin-left: 88px;
+  }
+  .page-main__header-button {
+    bottom: 525px;
+    left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 29px 15px 26px;
+    background-color: #68b738;
   }
 }
 

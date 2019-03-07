@@ -3,7 +3,7 @@
   margin: 0 auto;
   margin-top: 18px;
   //
-  /*border: 1px solid black;*/
+  //border: 1px solid black;
   min-height: 552px;
 }
 .categories__list {
@@ -106,7 +106,7 @@
 
   padding-top: 20px;
   padding-right: 160px;
-
+  font-family: Oswald;
   color: #111111;
   font-size: 16px;
   font-weight: 400;
@@ -138,6 +138,65 @@
   .categories__item {
     //
     min-height: 372px;
+  }
+  .categories__item-title {
+    font-size: 36px;
+    line-height: 37.02px;
+    margin: 0;
+    margin-top: 45px;
+    margin-left: 53px;
+    &::before {
+      left: 445px;
+      top: 95px;
+      width: 200px;
+      height: 200px;
+    }
+    &_slim::after {
+      left: 230px;
+      top: 25px;
+      width: 140px;
+      height: 194px;
+      background: url("../../img/cat-slim.svg_200%.png");
+    }
+
+    &_pro::after {
+      left: 14px;
+      top: 38px;
+      width: 268px;
+      height: 112px;
+      background: url("../../img/cat-pro.svg_200%.png");
+    }
+  }
+  .categories__item-text {
+    width: 372px;
+    height: 88px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 52px;
+  }
+
+  .categories__item-btn {
+    border: none;
+
+    margin-top: 45px;
+    margin-left: 47px;
+
+    padding-top: 20px;
+    padding-right: 0px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+
+    &::after {
+      left: 178px;
+      bottom: 62px;
+    }
   }
 }
 

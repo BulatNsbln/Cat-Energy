@@ -141,5 +141,24 @@
   .main-nav {
     width: 480px;
   }
-
+  //
+  .main-nav__list {
+    justify-content: space-between;
+    min-height: 58px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .main-nav__list-item {
+    margin: 0;
+    &_active{
+      &::before {
+        width: 70px;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .main-nav__list-item a {
+    color: #ffffff;
+    font-size: 20px;
+  }
 }

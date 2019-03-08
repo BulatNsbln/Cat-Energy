@@ -90,5 +90,10 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .social__list {
+    margin-left: 415px;
+  }
+  .social__copyright {
+    margin-left: 260px;
+  }
 }

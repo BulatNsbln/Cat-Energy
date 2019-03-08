@@ -88,13 +88,25 @@
     width: 570px;
     position: absolute;
     left: 110px;
-    top: 90px;
-
+    top: 95px;
+    z-index: 1;
+    background-color: white;
     //
     min-height: 201px;
   }
-  .contacts__map {
-    //
-    min-height: 399px;
+  .contacts__map-container {
+    background: url("../../img/map-desktop.png") no-repeat;
+    min-height: 400px;
+  }
+  .contacts__title {
+    margin: 0;
+    margin-top: 65px;
+    margin-left: 75px;
+  }
+  .contacts__address {
+    margin: 0;
+    margin-top: 63px;
+    margin-right: 87px;
+    text-align: left;
   }
 }

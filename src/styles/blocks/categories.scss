@@ -203,7 +203,7 @@
 @media (min-width: $desktop-width) {
   .categories {
     width: 1220px;
-    margin-top: 78px;
+    margin-top: 0px;
     // /
     min-height: 372px;
   }
@@ -214,7 +214,41 @@
   }
   .categories__item {
     width: 570px;
-    //
     min-height: 372px;
+  }
+  //
+  .categories__item-title {
+    margin-top: 40px;
+    margin-left: 213px;
+    &::before {
+      left: 50px;
+      top: 47px;
+      width: 100px;
+      height: 100px;
+    }
+    &_slim::after {
+      left: 65px;
+      top: 40px;
+      width: 70px;
+      height: 97px;
+      background: url("../../img/cat-slim.svg.png") no-repeat;
+    }
+    &_pro::after {
+      left: 32px;
+      top: 70px;
+      width: 134px;
+      height: 56px;
+      background: url("../../img/cat-pro.svg.png") no-repeat;
+    }
+  }
+  .categories__item-text {
+    width: 462px;
+    margin-top: 75px;
+  }
+  .categories__item-btn {
+    margin-top: -5px;
+    &::after {
+      bottom: 67px;
+    }
   }
 }

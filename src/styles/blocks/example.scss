@@ -320,6 +320,60 @@
   .example {
     margin-top: 20px;
     //
-    min-height: 652px;
+    min-height: 615px;
+  }
+  .example__title {
+    margin-top: 67px;
+    margin-left: 88px;
+  }
+  .example__text {
+    position: relative;
+    margin-left: 108px;
+    margin-top: 147px;
+    width: 435px;
+    z-index: 1;
+  }
+  .example__property-wrapper {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 78px;
+    z-index: 1;
+  }
+  .example__costs {
+    margin-top: 53px;
+    margin-left: 32px;
+    width: 330px;
+    text-align: left;
+    span {
+      margin-left: 58px;
+    }
+  }
+  .example__container-columns {
+    display: flex;
+  }
+  .example__compare {
+    margin-top: -380px;
+    margin-left: 157px;
+  }
+  .example__compare_prev .example__compare-photo {
+    background: url("../../img/Before-after-desktop.png") no-repeat;
+  }
+  .example__compare-slider {
+    margin-top: 40px;
+    margin-left: 125px;
+  }
+  .example__compare-background-wrapper {
+    top: 190px;
+    left: -635px;
+    width: 1440px;
+    height: 462px;
+    background-color: #f2f2f2;
+  }
+  //
+  .example__property-item {
+    &_1::before,
+    &_2::before {
+      background-color: #f2f2f2;
+    }
   }
 }

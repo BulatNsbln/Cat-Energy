@@ -62,3 +62,33 @@
 .social__copyright-logo {
   margin-right: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    min-height: 150px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .social__list {
+    margin-left: 160px;
+    margin-top: 60px;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .social__copyright {
+    padding-left: 118px;
+    margin-top: 57px;
+    justify-content: space-between;
+  }
+  .social__copyright-link {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

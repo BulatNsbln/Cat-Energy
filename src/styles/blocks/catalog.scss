@@ -1,37 +1,126 @@
 .catalog {
   width: 320px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 17px;
   //
   //border: 1px solid black;
-  min-height: 1720px;
+  min-height: 1733px;
 }
 .catalog__title {
   margin: 0;
   padding: 0;
+  margin-left: 20px;
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
   //
   //border: 1px solid black;
   min-height: 73px;
 }
 .catalog__list {
-  margin: 0;
+  margin: 15px auto;
   padding: 0;
   list-style: none;
-  //
-  //border: 1px solid blue;
+
+  border: 1px solid #ededed;
   min-height: 1585px;
 }
 .catalog__item {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  border-bottom: 1px solid #ededed;
   //
   //border: 1px solid black;
   min-height: 207px;
   &_last {
-    min-height: 180px;
+    min-height: 210px;
+    flex-direction: column;
   }
 }
+.catalog__item-photo {
+  width: 140px;
+  height: 144px;
+  margin-left: 3px;
+  margin-top: 0px;
+  &_last {
+    width: 30px;
+    height: 30px;
+    margin-left: 130px;
+    margin-top: 33px;
+  }
+}
+.catalog__item-title {
+  width: 80px;
+  height: 35px;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  &_last {
+    width: 205px;
+    margin: 0;
+    margin-top: 23px;
+    margin-left: 45px;
+  }
+}
+.catalog__item-properties-list {
+  padding: 0;
+  width: 141px;
+  color: #444444;
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.catalog__item-button {
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  font-family: 'Oswald';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #68b738;
+  padding: 0px 108px 0px 111px;
+  margin-left: 5px;
+  margin-top: -20px;
+  &_gray {
+    padding: 0;
+    margin-top: 22px;
+    background-color: #f2f2f2;
+    color: #444444;
+  }
+}
+.catalog__item-wrapper {
+  margin-top: 6px;
+  margin-left: 0px;
+}
+.catalog__item-property-value,
+.catalog__item-property-field {
+  padding: 0;
+}
+.catalog__item-property-field {
+  padding-left: 60px;
+  text-align: right;
+}
+
+.catalog__item-text {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  text-align: center;
+  margin-top: -7px;
+  margin-left: 2px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog {
     width: 708px;

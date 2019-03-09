@@ -1,38 +1,113 @@
 .catalogs-wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 42px;
 }
 .catalog-additional {
   width: 301px;
-  margin-left: 19px;
-  margin-top: 55px;
+  margin-left: 20px;
+  margin-top: 32px;
   //
   /*border: 1px solid black;*/
   min-height: 900px;
 }
 .catalog-additional__title {
+  position: relative;
   margin: 0;
+  margin-left: 0px;
   padding: 0;
+  color: #111111;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
   //
   /*border: 1px solid black;*/
   min-height: 25px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 14px;
+    right: 1px;
+
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+  }
 }
 .catalog-additional__list {
   margin: 0;
   padding: 0;
-  margin-top: 27px;
+  margin-top: 32px;
   list-style: none;
-  //
-  /*border: 1px solid blue;*/
   min-height: 517px;
 }
 .special-offer {
   width: 280px;
   margin-top: 39px;
-  //
+  background: url("../../img/gift-photo-mobile.jpg") no-repeat;
   /*border: 1px solid red;*/
   min-height: 287px;
 }
+.special-offer__logo {
+  width: 55px;
+  height: 60px;
+  margin-left: 72px;
+  margin-top: 67px;
+}
+.special-offer__text {
+  color: #ffffff;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+.catalog-additional__item {
+  border-bottom: 1px solid #cdcdcd;
+  min-height: 128px;
+  margin-right: 20px;
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+.catalog-additional__item-title {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 2px;
+  color: #222222;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.catalog-additional__item-property,
+.catalog-additional__item-price {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.catalog-additional__item-property {
+  display: block;
+  margin-top: 13px;
+  float: left;
+}
+.catalog-additional__item-price {
+  display: block;
+  margin-left: auto;
+  float: right;
+}
+
+.catalog-additional__item .button {
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .catalogs-wrapper {
     width: 768px;

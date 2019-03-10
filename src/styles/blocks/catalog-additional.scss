@@ -115,18 +115,39 @@
   .catalog-additional {
     margin: 0;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 67px;
     //
     min-height: 938px;
   }
   .catalog-additional__title {
+    color: #111111;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 67px;
     //
     min-height: 37px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: -70px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+    &::after {
+      width: 327px;
+      top: 20px;
+    }
+
   }
   .catalog-additional__list {
     margin: 0 auto;
     margin-top: 75px;
     width: 708px;
+    border: 1px solid #e6e6e6;
     //
     min-height: 557px;
   }
@@ -136,6 +157,61 @@
     margin-top: 67px;
     //
     min-height: 200px;
+  }
+  .catalog-additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    border-bottom: 1px solid #dadada;
+    &:first-child {
+      border-top: none;
+    }
+  }
+  .catalog-additional__item-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 37px;
+    margin-top: 15px;
+  }
+  .catalog-additional__item-property {
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 35px;
+    font-size: 16px;
+  }
+  .catalog-additional__item-price {
+    font-size: 16px;
+    margin-right: 37px;
+    margin-top: 35px;
+    margin-left: 0;
+  }
+  .catalog-additional__item .button {
+    margin-left: 40px;
+    width: 630px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  ///
+
+  .special-offer {
+    width: 708px;
+    margin-top: 62px;
+    background: url("../../img/gift-photo-tablet.jpg.png") no-repeat;
+    /*border: 1px solid red;*/
+    min-height: 200px;
+    margin-bottom: 107px;
+  }
+  .special-offer__logo {
+    margin-left: 50px;
+    margin-top: 67px;
+    display: inline-block;
+  }
+  .special-offer__text {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 275px;
+    text-align: left;
   }
 }
 @media (min-width: $desktop-width) {

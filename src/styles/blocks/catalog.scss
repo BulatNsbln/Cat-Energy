@@ -44,7 +44,29 @@
   height: 144px;
   margin-left: 3px;
   margin-top: 0px;
+  &_1 {
+    background: url("../../img/catalog-1-mobile.jpg.jpg");
+  }
+  &_2 {
+    background: url("../../img/catalog-2-mobile.jpg.jpg");
+  }
+  &_3 {
+    background: url("../../img/catalog-3-mobile.jpg.jpg");
+  }
+  &_4 {
+    background: url("../../img/catalog-4-mobile.jpg.jpg");
+  }
+  &_5 {
+    background: url("../../img/catalog-5-mobile.jpg.jpg");
+  }
+  &_6 {
+    background: url("../../img/catalog-6-mobile.jpg.jpg");
+  }
+  &_7 {
+    background: url("../../img/catalog-7-mobile.jpg.jpg");
+  }
   &_last {
+    background: url("../../img/plus-mobile.svg.png");
     width: 30px;
     height: 30px;
     margin-left: 130px;
@@ -129,20 +151,155 @@
     min-height: 2362px;
   }
   .catalog__title {
+    margin-left: 0px;
+    font-size: 60px;
+    line-height: 60px;
     //
     min-height: 70px;
   }
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
+    justify-content: space-between;
+    margin-top: 15px;
+    border: none;
     //
     min-height: 2230px;
   }
   .catalog__item {
-    width: 351px;
+    position: relative;
+    padding: 0;
+    margin-top: 140px;
+    width: 324px;
+    height: 431px;
+    border: none;
+    background-color: #f2f2f2;
+    &_last {
+      background-color: white;
+    }
     //border: 1px solid black;
-    min-height: 557px;
+  }
+  //
+  .catalog__item-photo {
+    position: absolute;
+    &_1 {
+      background: url("../../img/catalog-1-tablet.png.png");
+      width: 161px;
+      height: 172px;
+      top: -47px;
+      left: 80px;
+    }
+    &_2 {
+      background: url("../../img/catalog-2-tablet.png.png");
+      width: 195px;
+      height: 208px;
+      top: -85px;
+      left: 67px;
+    }
+    &_3 {
+      background: url("../../img/catalog-3-tablet.png.png");
+      width: 163px;
+      height: 174px;
+      top: -50px;
+      left: 80px;
+    }
+    &_4 {
+      background: url("../../img/catalog-4-tablet.png.png");
+      width: 194px;
+      height: 208px;
+      top: -83px;
+      left: 67px;
+    }
+    &_5 {
+      background: url("../../img/catalog-5-tablet.png");
+      width: 161px;
+      height: 171px;
+      top: -45px;
+      left: 82px;
+    }
+    &_6 {
+      background: url("../../img/catalog-6-tablet.png.png");
+      width: 195px;
+      height: 208px;
+      top: -83px;
+      left: 65px;
+    }
+    &_7 {
+      background: url("../../img/catalog-7-tablet.png");
+      width: 163px;
+      height: 174px;
+      top: -50px;
+      left: 80px;
+    }
+    &_last {
+      background: url("../../img/plus.svg.png");
+      width: 60px;
+      height: 60px;
+      margin-left: 132px;
+      margin-top: 55px;
+    }
+  }
+  .catalog__item-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .catalog__item-title {
+    width: 130px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 162px;
+    color: #111111;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    &_last {
+      width: 150px;
+      margin-top: 48px;
+    }
+  }
+  .catalog__item-properties-list {
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #444444;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .catalog__item-property-field {
+    padding-left: 135px;
+    width: 60px;
+    display: inline-block;
+  }
+  .catalog__item-property-field,
+  .catalog__item-property-value {
+    padding-bottom: 15px;
+  }
+  .catalog__item-button {
+    margin-left: 40px;
+    padding-left: 95px;
+    padding-right: 92px;
+    &_gray {
+      margin: 0 auto;
+      margin-top: 87px;
+      padding: 0 80px;
+      color: #444444;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+  .catalog__item-text {
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 35px;
+    color: #444444;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
   }
 }
 @media (min-width: $desktop-width) {

@@ -156,9 +156,22 @@
         background-color: #ffffff;
       }
     }
+    &_white {
+      &_active{
+        &::before {
+          width: 170px;
+          background-color: #68b738;
+        }
+      }
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 20px;
+    }
+    &_white a {
+      color: black;
+    }
   }
-  .main-nav__list-item a {
-    color: #ffffff;
-    font-size: 20px;
-  }
+
 }

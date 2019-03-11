@@ -221,26 +221,51 @@
   .catalog-additional {
     margin: 0;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 73px;
     //
     min-height: 410px;
   }
   .catalog-additional__title {
+    margin-left: 107px;
     //
     min-height: 37px;
   }
   .catalog-additional__list {
     display: inline-flex;
-    margin: 75px 0 0 110px;
+    flex-direction: column;
+    margin: 0;
     width: 895px;
     //
     min-height: 289px;
   }
   .special-offer {
+    background: url("../../img/gift-photo-desktop.jpg.png") no-repeat;
     display: inline-flex;
     width: 245px;
-    margin: 75px 0 0 72px;
+    margin: 40px 0 0 72px;
     //
     min-height: 289px;
+  }
+  //
+  .special-offer__logo {
+    margin-left: 0px;
+    margin-top: 0px;
+    display: inline-block;
+  }
+  .special-offer__text {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: left;
+  }
+  //
+  .catalog-additional__item {
+    min-height: 70px;
+  }
+  .catalog-additional__item-property {
+    margin-left: 0;
+  }
+  .catalog-additional__item .button {
+    width: 150px;
   }
 }

@@ -176,6 +176,7 @@
     background-color: #f2f2f2;
     &_last {
       background-color: white;
+      border: 1px solid #e6e6e6;
     }
     //border: 1px solid black;
   }
@@ -305,22 +306,66 @@
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1220px;
-    margin-top: 75px;
+    margin-top: 52px;
     //
     min-height: 1222px;
   }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 13px;
     //
     min-height: 1090px;
   }
   .catalog__item {
-    width: 280px;
+    width: 245px;
+    margin-top: 0;
+    margin-top: 142px;
     //
     //border: 1px solid black;
-    min-height: 560px;
+    min-height: 431px;
+  }
+  //
+  .catalog__item-photo {
+    &_1 {
+      left: 40px;
+    }
+    &_2 {
+      left: 25px;
+    }
+    &_3 {
+      left: 40px;
+    }
+    &_4 {
+      left: 25px;
+    }
+    &_5 {
+      left: 40px;
+    }
+    &_6 {
+      left: 25px;
+    }
+    &_7 {
+      left: 40px;
+    }
+    &_last {
+      margin-top: 55px;
+      margin-left: 92px;
+    }
+  }
+  .catalog__item-property-field {
+    padding-left: 55px;
+  }
+  .catalog__item-button {
+    margin-left: 35px;
+    padding-left: 55px;
+    padding-right: 55px;
+    &_gray {
+      margin: 0 auto;
+      margin-top: 87px;
+      padding: 0 60px;
+    }
   }
 }

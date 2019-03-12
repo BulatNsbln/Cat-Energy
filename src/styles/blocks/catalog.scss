@@ -365,7 +365,37 @@
     &_gray {
       margin: 0 auto;
       margin-top: 87px;
-      padding: 0 60px;
+      padding: 0 40px;
+    }
+  }
+  .catalog__item-tr {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 169px;
+      height: 1px;
+      background-color: #cdcdcd;
+      left: 35px;
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

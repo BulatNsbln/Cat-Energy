@@ -131,15 +131,15 @@
     &::before {
       content: '';
       position: absolute;
-      top: 20px;
-      left: -70px;
-      width: 30px;
+      top: 23px;
+      left: -110px;
+      width: 70px;
       height: 3px;
       background-color: #68b738;
     }
     &::after {
-      width: 327px;
-      top: 20px;
+      width: 960px;
+      top: 22px;
     }
 
   }
@@ -218,12 +218,22 @@
   .catalogs-wrapper {
     width: 1440px;
   }
+
   .catalog-additional {
     margin: 0;
     width: 100%;
     margin-top: 73px;
     //
     min-height: 410px;
+  }
+  .catalog-additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    min-height: 290px;
   }
   .catalog-additional__title {
     margin-left: 107px;
@@ -235,37 +245,98 @@
     flex-direction: column;
     margin: 0;
     width: 895px;
+    border: none;
     //
     min-height: 289px;
+  }
+  .catalog-additional__item {
+    justify-content: flex-start;
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
+  }
+  .catalog-additional__item-title {
+    font-size: 20px;
+    margin-top: 28px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .catalog-additional__item-price,
+  .catalog-additional__item-property {
+    margin: 0;
+    margin-top: 33px;
+  }
+  .catalog-additional__item_1 {
+    .catalog-additional__item-property {
+      margin-left: 165px;
+    }
+    .catalog-additional__item-price {
+      margin-left: 110px;
+    }
+    .button {
+      margin-left: 37px;
+    }
+  }
+  .catalog-additional__item_2 {
+    .catalog-additional__item-property {
+      margin-left: 195px;
+    }
+    .catalog-additional__item-price {
+      margin-left: 180px;
+    }
+    .button {
+      margin-left: 45px;
+    }
+  }
+  .catalog-additional__item_3 {
+    .catalog-additional__item-property {
+      margin-left: 255px;
+    }
+    .catalog-additional__item-price {
+      margin-left: 200px;
+    }
+    .button {
+      margin-left: 35px;
+    }
+  }
+  .catalog-additional__item_4 {
+    .catalog-additional__item-property {
+      margin-left: 235px;
+    }
+    .catalog-additional__item-price {
+      margin-left: 120px;
+    }
+    .button {
+      margin-left: 37px;
+    }
   }
   .special-offer {
     background: url("../../img/gift-photo-desktop.jpg.png") no-repeat;
     display: inline-flex;
     width: 245px;
-    margin: 40px 0 0 72px;
+    margin: 0;
     //
     min-height: 289px;
   }
   //
   .special-offer__logo {
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 55px;
+    margin-top: 45px;
     display: inline-block;
   }
   .special-offer__text {
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 60px;
     margin-left: 0px;
-    text-align: left;
+    text-align: center;
   }
   //
   .catalog-additional__item {
-    min-height: 70px;
-  }
-  .catalog-additional__item-property {
-    margin-left: 0;
+    min-height: 72px;
   }
   .catalog-additional__item .button {
-    width: 150px;
+    width: 245px;
+    margin-bottom: 0;
+    margin-top: 15px;
   }
 }

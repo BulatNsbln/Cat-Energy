@@ -36,7 +36,7 @@ const argv = yargs.argv,
 	paths = {
 		views: {
 			src: [
-				"./src/views/catalog.html",
+				"./src/views/form.html",
 				"./src/views/pages/*.html"
 			],
 			dist: "./dist/",

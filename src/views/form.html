@@ -82,14 +82,16 @@
                 </div>
                 <fieldset class="form__contacts">
                     <h3 class="form__contacts-title">Контактные данные (владельца кота)</h3>
-                    <label class="form__contacts-item-label">
+                     <div class="form__contacts-labels-wrapper">
+                        <label class="form__contacts-item-label">
                         E-MAIL:*
-                        <input class="form__contacts-item-input form__contacts-item-input_1" type="email" value="kuklachev@gmail.com" required>
+                            <input class="form__contacts-item-input form__contacts-item-input_1" type="email" value="kuklachev@gmail.com" required>
                     </label>
-                    <label class="form__contacts-item-label">
+                        <label class="form__contacts-item-label">
                         ТЕЛЕФОН:*
                         <input class="form__contacts-item-input form__contacts-item-input_2" type="tel" value="8 (960) 900-60-90" required>
                     </label>
+                     </div>
                 </fieldset>
                 <fieldset class="form__comment">
                     <h3 class="form__comment-title">Комментарий</h3>
@@ -97,25 +99,27 @@
                 </fieldset>
                 <fieldset class="form__additional">
                     <h3 class="form__additional-title">Дополнительно</h3>
-                    <label class="form__additional-label">
-                        <input class="form__additional-input" type="checkbox" checked>
-                        <div class="form__additional-text">САХАРОЗАМЕНИТЕЛЬ</div>
-                    </label>
-                    <label class="form__additional-label">
+                    <div class="form__additional-labels-wrapper">
+                        <label class="form__additional-label">
+                            <input class="form__additional-input" type="checkbox" checked>
+                            <div class="form__additional-text">САХАРОЗАМЕНИТЕЛЬ</div>
+                        </label>
+                        <label class="form__additional-label">
                         <input class="form__additional-input" type="checkbox">
                         <div class="form__additional-text">ПИТЬЕВАЯ ВОДА</div>
                     </label>
-                    <label class="form__additional-label">
+                        <label class="form__additional-label form__additional-label_3">
                         <input class="form__additional-input" type="checkbox">
                         <div class="form__additional-text">МОЛОКО</div>
                     </label>
-                    <label class="form__additional-label">
+                        <label class="form__additional-label">
                         <input class="form__additional-input" type="checkbox">
                         <div class="form__additional-text">ВИТАМИНЫ</div>
                     </label>
+                    </div>
                 </fieldset>
 
-                <input class="form__submit button" type="submit" value="Отправить заявку">
+                    <input class="form__submit button" type="submit" value="Отправить заявку">
                 <small class="form__note">
                     <br> <sup>*</sup> — Обязательные поля
                 </small>

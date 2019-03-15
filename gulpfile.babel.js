@@ -36,7 +36,7 @@ const argv = yargs.argv,
 	paths = {
 		views: {
 			src: [
-				"./src/views/form.html",
+				"./src/views/*.html",
 				"./src/views/pages/*.html"
 			],
 			dist: "./dist/",
@@ -78,6 +78,14 @@ const argv = yargs.argv,
 		server_config: {
 			src: "./src/.htaccess",
 			dist: "./dist/"
+		},
+		fonts: {
+			src: "./src/fonts/Oswald/*.{woff,ttf}",
+			dist: "./dist/fonts/Oswald"
+		},
+		svg: {
+			src: "./src/img/svg/*.{svg}",
+			dist: "./dist/img/svg"
 		}
 	};
 
@@ -152,6 +160,18 @@ export const views = () => gulp.src(paths.views.src)
 		"title": "HTML files"
 	}))
 	.on("end", browsersync.reload);
+
+export const fonts = () => gulp.src(paths.fonts.src)
+	.pipe(gulp.dest(paths.fonts.dist))
+	.pipe(debug({
+		"title": "Fonts"
+	}));
+
+export const svg = () => gulp.src(paths.svg.src)
+	.pipe(gulp.dest(paths.svg.dist))
+	.pipe(debug({
+		"title": "SVG"
+	}));
 
 export const styles = () => gulp.src(paths.styles.src)
 	.pipe(gulpif(!production, sourcemaps.init()))
@@ -312,10 +332,10 @@ export const favs = () => gulp.src(paths.favicons.src)
 	}));
 
 export const development = gulp.series(cleanFiles, smartGrid,
-	gulp.parallel(views, styles, scripts, images, webpimages, sprites, favs),
+	gulp.parallel(views, styles, scripts, images, webpimages, sprites, favs, fonts, svg),
 	gulp.parallel(watchCode, server));
 
-export const prod = gulp.series(cleanFiles, smartGrid, serverConfig, views, styles, scripts, images, webpimages, sprites, favs);
+export const prod = gulp.series(cleanFiles, smartGrid, serverConfig, views, styles, scripts, images, webpimages, sprites, favs, fonts, svg);
 
 export default development;
 

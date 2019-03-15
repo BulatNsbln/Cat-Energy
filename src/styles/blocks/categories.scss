@@ -56,7 +56,7 @@
     top: 25px;
     width: 35px;
     height: 50px;
-    background: url("../../img/Vector_Smart_Object.png");
+    background: url("../../img/icon-cat-slim.svg");
   }
 
   &_pro::before {
@@ -79,7 +79,7 @@
     top: 38px;
     width: 67px;
     height: 28px;
-    background: url("../../img/Vector_Smart_Object_copy_2.png");
+    background: url("../../img/icon-cat-pro.svg");
   }
 }
 
@@ -112,15 +112,23 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-
+  cursor: pointer;
+  outline: none;
+  &:hover::after {
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+  }
   &::after {
     content: "";
     position: absolute;
     width: 24px;
     height: 11px;
-    background: url("../../img/right-arrow-long.svg.png");
+    background: url("../../img/icon-right-arrow-long.svg");
     left: 110px;
     bottom: 18px;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -152,19 +160,17 @@
       height: 200px;
     }
     &_slim::after {
-      left: 230px;
-      top: 25px;
+      left: 475px;
+      top: 85px;
       width: 140px;
       height: 194px;
-      background: url("../../img/cat-slim.svg_200%.png");
     }
 
     &_pro::after {
-      left: 14px;
-      top: 38px;
+      left: 410px;
+      top: 140px;
       width: 268px;
       height: 112px;
-      background: url("../../img/cat-pro.svg_200%.png");
     }
   }
   .categories__item-text {

@@ -22,11 +22,10 @@
   //border: 1px solid orange;
 }
 .page-header__logo-image {
-  background: url("../../img/logo-mobile.svg.png") no-repeat;
+  display: block;
   width: 33px;
   height: 38px;
   &_mobile {
-    background: url("../../img/logo-mobile-header.svg.png") no-repeat;
     width: 101px;
     height: 18px;
   }
@@ -61,11 +60,17 @@
     padding-left: 0px;
   }
   .page-header__logo-image {
-    background: url("../../img/logo-tablet.svg.png") no-repeat;
     width: 173px;
     height: 58px;
+    cursor: pointer;
     &_mobile {
       display: none;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.6;
     }
   }
 }
@@ -85,7 +90,6 @@
     min-height: 59px;
   }
   .page-header__logo-image {
-    background: url("../../img/logo-desktop.svg.png") no-repeat;
     width: 202px;
     height: 59px;
   }

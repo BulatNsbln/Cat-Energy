@@ -11,13 +11,17 @@
 <body>
     <header class="page-header">
     <div class="page-header__wrapper">
-        <a class="page-header__logo">
-            <div class="page-header__logo-image"></div>
-        </a>
-        <a class="page-header__name">
-            <div class="page-header__logo-image_mobile"></div>
-        </a>
-    </div>
+            <a class="page-header__logo">
+                <picture class="page-header__logo-image" >
+                    <source media="(min-width: 1200px)" srcset="../img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+                    <img src="../img/icon-logo-mobile.svg" alt="Логотип сайта">
+                </picture>
+            </a>
+            <a class="page-header__name">
+                <img class="page-header__logo-image_mobile" src="../img/logo-mobile-header.svg" alt="лого с названием сайта">
+            </a>
+        </div>
     <nav class="main-nav main-nav--opened ">
         <button type="button" class="main-nav__toggle">
             <span class="visually-hidden">Открыть меню</span>

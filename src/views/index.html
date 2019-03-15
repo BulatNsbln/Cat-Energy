@@ -14,10 +14,14 @@
     <header class="page-header">
         <div class="page-header__wrapper">
             <a class="page-header__logo">
-                <div class="page-header__logo-image"></div>
+                <picture class="page-header__logo-image" >
+                    <source media="(min-width: 1200px)" srcset="../img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+                    <img src="../img/icon-logo-mobile.svg" alt="Логотип сайта">
+                </picture>
             </a>
             <a class="page-header__name">
-                <div class="page-header__logo-image_mobile"></div>
+                <img class="page-header__logo-image_mobile" src="../img/logo-mobile-header.svg" alt="лого с названием сайта">
             </a>
         </div>
         <nav class="main-nav main-nav--opened ">
@@ -201,16 +205,14 @@
 
 
         <section class="page-footer__social social">
-            <img src="../img/footer-logo.svg.png" class="page-footer__logo" width="128" height="24">
+            <img src="../img/logo-footer.svg" class="page-footer__logo" width="128" height="24">
             <ul class="social__list">
                 <li class="social__item">
                     <a class="social__link social__link-vkontakte" href="#">
-                        <span class="visually-hidden">Вконтакте</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12" viewBox="0 0 22 12">
-                            <g><g transform="translate(-93 -3067)">
-                                <image width="22" height="12" transform="translate(93 3067)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABo0lEQVQ4T33TO+jPYRTH8dcfkzC5LCRM7imUe5RyWYRCUsLGRoRFwuY2iJRr/AdJQggDCzK4lsKgkGJgkTvpk/OrL/14ludyznmfy3NOBxZiArr6vd5iDz5iF5ahd8m+4xbm4V29xX5EnbN1x80OfMM9vMYnjMNVrMUT9MUsvEcPdGIdTmEU7uJCA9wnjIDP4gsWlXBagYfiJV5gBS6W/H5ldLSNbVTisGfASSMRT8HtMj6PLpiLJiji3LfhA85hOJ6V3apyOjbgrIOV1kT8xCA8wnqsKVBKkPUAB7AF+7C13vNP1yu7ky1w6vIY28tjdBfjBKIzBg8LkPrPwDXMwQ/0q0yOY0P0WuCcl+AQRjdSC2AAjjU+ZwhmIjX+XO+Jfn4FEEd/gHM/jcGYXO3W4P33OB2XsQk724F74U5FvABf2+BS/x3VOYcb8rTkGezFxmYpWjr9cQNvsBxP/4IfwTCMxG5sbsjzgVf+BY5eJi2A2RXFpRqWTGP6NO32qgYj9/01C7FditXtIm4GOBUrMQkD0Q3PkSHK8KRb0nrjG0YpX+cvz5JjNytLkBkAAAAASUVORK5CYII="/>
-                            </g></g>
-                        </svg>
+                        <picture>
+                            <source media="(min-width: )">
+                            <img src="../img/icon-vk.svg">
+                        </picture>
                     </a>
                 </li>
                 <li class="social__item social__item_insta">

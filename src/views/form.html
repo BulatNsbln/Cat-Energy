@@ -12,10 +12,14 @@
     <header class="page-header">
     <div class="page-header__wrapper">
         <a class="page-header__logo">
-            <div class="page-header__logo-image"></div>
+            <picture class="page-header__logo-image" >
+                <source media="(min-width: 1200px)" srcset="../img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+                <img src="../img/icon-logo-mobile.svg" alt="Логотип сайта">
+            </picture>
         </a>
         <a class="page-header__name">
-            <div class="page-header__logo-image_mobile"></div>
+            <img class="page-header__logo-image_mobile" src="../img/logo-mobile-header.svg" alt="лого с названием сайта">
         </a>
     </div>
     <nav class="main-nav main-nav--opened ">
@@ -28,12 +32,12 @@
                     Главная
                 </a>
             </li>
-            <li class="main-nav__list-item main-nav__list-item_white main-nav__list-item_active main-nav__list-item_white_active ">
+            <li class="main-nav__list-item main-nav__list-item_white ">
                 <a href="./catalog.html">
                     Каталог продукции
                 </a>
             </li>
-            <li class="main-nav__list-item main-nav__list-item_white">
+            <li class="main-nav__list-item main-nav__list-item_white main-nav__list-item_active  main-nav__list-item_white_active ">
                 <a href="./form.html">
                     Подбор программы
                 </a>

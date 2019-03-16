@@ -45,9 +45,12 @@
     left: -10px;
     width: 27px;
     height: 27px;
-    border: 1px solid #CDD1DA;
+    border: 1px solid #cdcdcd;
     border-radius: 50%;
     background: #FFF;
+  }
+  &:hover::before {
+    border-color: #bebebe;
   }
   &::after {
     content: '';
@@ -60,6 +63,10 @@
     background: #9FD468;
     opacity: 0;
     transition: .2s;
+  }
+  &:active::after,
+  &:active::before {
+    opacity: 0.3;
   }
 }
 @media (min-width: $tablet-width) {

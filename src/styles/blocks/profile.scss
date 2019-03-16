@@ -31,6 +31,13 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  outline-color: #444444;
+  &:hover {
+    border-color: #cdcdcd;
+  }
+  &:invalid {
+    border-color: #ff8282;
+  }
   &_1 {
     margin-left: 10px;
     width: 212px;

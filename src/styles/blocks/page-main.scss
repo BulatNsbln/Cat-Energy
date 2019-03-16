@@ -54,6 +54,12 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: #88c065;
+  }
 }
 
 .page-main__header-image {
@@ -117,12 +123,6 @@
     line-height: 20px;
     padding: 17px 29px 15px 26px;
     background-color: #68b738;
-    &:hover {
-      background-color: #5eaa2f;
-    }
-    &:active {
-      color: #88c065;
-    }
   }
 }
 

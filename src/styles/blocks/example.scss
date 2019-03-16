@@ -272,6 +272,11 @@
     font-family: Oswald;
     font-size: 20px;
     z-index: 2;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #bebebe;
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
   }
   .example__compare-slider {
     margin-top: 20px;

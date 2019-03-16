@@ -42,6 +42,27 @@
   margin: 0 35px;
 }
 
+.social__link-img {
+  &_vk {
+    width: 22px;
+    height: 12px;
+  }
+  &_insta {
+    width: 16px;
+    height: 16px;
+  }
+  &_facebook {
+    width: 10px;
+    height: 19px;
+  }
+  &:hover {
+    fill: #68b738;
+  }
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
 .social__copyright {
   margin-top: 25px;
   display: flex;
@@ -57,6 +78,9 @@
   text-decoration: none;
   margin-left: 20px;
   margin-top: 7px;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__copyright-logo {
@@ -78,6 +102,21 @@
     &::after {
       display: none;
     }
+  }
+  .social__link-img {
+    &_vk {
+      width: 30px;
+      height: 16px;
+    }
+    &_insta {
+      width: 23px;
+      height: 23px;
+    }
+    &_facebook {
+      width: 14px;
+      height: 28px;
+    }
+
   }
   .social__copyright {
     padding-left: 118px;

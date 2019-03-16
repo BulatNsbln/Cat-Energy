@@ -138,9 +138,10 @@
       background-color: #68b738;
     }
     &::after {
-      width: 960px;
+      width: 325px;
       top: 22px;
     }
+
 
   }
   .catalog-additional__list {
@@ -239,6 +240,10 @@
     margin-left: 107px;
     //
     min-height: 37px;
+    &::after {
+      width: 960px;
+      top: 22px;
+    }
   }
   .catalog-additional__list {
     display: inline-flex;

@@ -221,6 +221,13 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: #88c065;
+  }
 }
 .form__note {
   display: inline-block;

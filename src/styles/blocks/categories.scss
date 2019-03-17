@@ -1,74 +1,77 @@
 .categories {
   width: 280px;
+  min-height: 552px;
   margin: 0 auto;
   margin-top: 18px;
-  //
-  //border: 1px solid black;
-  min-height: 552px;
 }
 .categories__list {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 552px;
   margin: 0;
   padding: 0;
+
   list-style: none;
-  //
-  min-height: 552px;
 }
 .categories__item {
   position: relative;
-  background-color: #f2f2f2;
-  //
+
   min-height: 266px;
-  /*border: 1px solid black;*/
+
+  background-color: #f2f2f2;
 }
 
 .categories__item-title {
   margin: 0;
+  padding-top: 35px;
+  margin-left: 92px;
 
-  color: #111111;
   font-size: 24px;
   font-weight: 400;
   line-height: 37.02px;
   text-transform: uppercase;
-  margin-left: 92px;
-  padding-top: 35px;
+  color: #111111;
 
   &_slim::before {
-    content: "";
-
     position: absolute;
     left: 25px;
     top: 26px;
+
     width: 50px;
     height: 50px;
+
     background-color: #68b738;
     border-radius: 50%;
+
+    content: "";
   }
 
   &_slim::after {
-    content: '';
-
     position: absolute;
     left: 30px;
     top: 25px;
+
     width: 35px;
     height: 50px;
+
     background: url("../../img/icon-cat-slim.svg");
+
+    content: '';
   }
 
   &_pro::before {
-    content: "";
-
     position: absolute;
     left: 20px;
     top: 26px;
+
     width: 50px;
     height: 50px;
+
     background-color: #68b738;
     border-radius: 50%;
+
+    content: "";
   }
 
   &_pro::after {
@@ -85,47 +88,49 @@
 
 .categories__item-text {
   width: 225px;
-  color: #444444;
-  font-family: "Arial";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: center;
   margin-top: 27px;
   margin-left: 10px;
+
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
 }
 
 .categories__item-btn {
-  background-color: #f2f2f2;
-  border: none;
-
-  border-top: 1px solid silver;
-
   margin-top: 10px;
   margin-left: 13px;
-
   padding-top: 20px;
   padding-right: 160px;
+
   font-family: Oswald;
-  color: #111111;
   font-size: 16px;
-  font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  cursor: pointer;
+
+  background-color: #f2f2f2;
+  border: none;
+  border-top: 1px solid silver;
   outline: none;
+  cursor: pointer;
+
   &:hover::after {
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
     width: 33px;
+
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
   }
   &::after {
-    content: "";
     position: absolute;
-    width: 24px;
-    height: 11px;
-    background: url("../../img/icon-right-arrow-long.svg");
     left: 110px;
     bottom: 18px;
+
+    width: 24px;
+    height: 11px;
+
+    background: url("../../img/icon-right-arrow-long.svg");
+
+    content: "";
   }
   &:active {
     opacity: 0.3;
@@ -135,40 +140,41 @@
 @media (min-width: $tablet-width) {
   .categories {
     width: 708px;
-    margin-top: 0;
-    //
     min-height: 774px;
+    margin-top: 0;
   }
   .categories__list {
-    //
     min-height: 774px;
   }
   .categories__item {
-    //
     min-height: 372px;
   }
   .categories__item-title {
-    font-size: 36px;
-    line-height: 37.02px;
     margin: 0;
     margin-top: 45px;
     margin-left: 53px;
+
+    font-size: 36px;
+    line-height: 37.02px;
     &::before {
-      left: 445px;
       top: 95px;
+      left: 445px;
+
       width: 200px;
       height: 200px;
     }
     &_slim::after {
-      left: 475px;
       top: 85px;
+      left: 475px;
+
       width: 140px;
       height: 194px;
     }
 
     &_pro::after {
-      left: 410px;
       top: 140px;
+      left: 410px;
+
       width: 268px;
       height: 112px;
     }
@@ -176,28 +182,24 @@
   .categories__item-text {
     width: 372px;
     height: 88px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-
     margin: 0;
     margin-top: 25px;
     margin-left: 52px;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
   }
-
   .categories__item-btn {
-    border: none;
-
     margin-top: 45px;
     margin-left: 47px;
-
     padding-top: 20px;
     padding-right: 0px;
 
     font-size: 20px;
     line-height: 20px;
 
+    border: none;
 
     &::after {
       left: 178px;
@@ -205,45 +207,46 @@
     }
   }
 }
-
 @media (min-width: $desktop-width) {
   .categories {
     width: 1220px;
-    margin-top: 0px;
-    // /
     min-height: 372px;
+    margin-top: 0px;
   }
   .categories__list {
     flex-direction: row;
-    //
     min-height: 372px;
   }
   .categories__item {
     width: 570px;
     min-height: 372px;
   }
-  //
   .categories__item-title {
     margin-top: 40px;
     margin-left: 213px;
     &::before {
       left: 50px;
       top: 47px;
+
       width: 100px;
       height: 100px;
     }
     &_slim::after {
       left: 65px;
       top: 40px;
+
       width: 70px;
       height: 97px;
+
       background: url("../../img/cat-slim.svg.png") no-repeat;
     }
     &_pro::after {
       left: 32px;
       top: 70px;
+
       width: 134px;
       height: 56px;
+
       background: url("../../img/cat-pro.svg.png") no-repeat;
     }
   }

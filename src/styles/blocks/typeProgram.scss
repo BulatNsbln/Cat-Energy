@@ -1,32 +1,36 @@
 .type-program {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ededed;
   margin: 0;
   padding: 0;
   margin-top: 10px;
-  //
   min-height: 156px;
+
+  border: 1px solid #ededed;
 }
 .type-program__item-label {
   margin-left: 12px;
   margin-top: 22px;
-
   input:checked + .type-program__item-text:after {
     opacity: 1;
   }
 }
 .type-program__item-input {
-  margin-right: 10px;
-  //
   position: absolute;
   z-index: -1;
-  opacity: 0;
+
   margin: 10px 0 0 7px;
+  margin-right: 10px;
+
+  opacity: 0;
 }
 .type-program__item-text {
-  margin-left: 18px;
+  position: relative;
+
   display: inline-block;
+  margin-left: 18px;
+  padding: 0 0 0 35px;
+
   color: #222222;
   font-family: Oswald;
   font-size: 16px;
@@ -34,35 +38,37 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  //
-  position: relative;
-  padding: 0 0 0 35px;
   cursor: pointer;
   &::before {
-    content: '';
     position: absolute;
     top: -5px;
     left: -10px;
     width: 27px;
+
     height: 27px;
+
     border: 1px solid #cdcdcd;
     border-radius: 50%;
     background: #FFF;
+    content: '';
   }
   &:hover::before {
     border-color: #bebebe;
   }
   &::after {
-    content: '';
     position: absolute;
     top: 3px;
     left: -2px;
+
     width: 13px;
     height: 13px;
+
     border-radius: 50%;
     background: #9FD468;
     opacity: 0;
     transition: .2s;
+
+    content: '';
   }
   &:active::after,
   &:active::before {
@@ -73,7 +79,6 @@
   .type-program {
     margin-top: 50px;
     width: 630px;
-    //
     min-height: 193px;
   }
   .type-program__item-label {
@@ -86,12 +91,14 @@
     &::before {
       top:-9px;
       left: -24px;
+
       width: 35px;
       height: 35px;
     }
     &::after {
       top: 2px;
       left: -13px;
+
       width: 16px;
       height: 16px;
     }
@@ -102,18 +109,11 @@
     margin: 0;
     margin-top: -5px;
     margin-left: 70px;
+
     width: 565px;
-    //
     height: 180px;
   }
   .type-program__item-label {
     margin-top: 35px;
   }
 }
-
-
-/*
-.radio input:focus + .radio__text:before {
-  box-shadow: 0 0 0 3px rgba(255,255,0,.7);
-}
-*/

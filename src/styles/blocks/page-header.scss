@@ -1,12 +1,12 @@
 .page-header {
   position: relative;
+
   width: 320px;
   margin: 0 auto;
   min-height: 260px;
 }
 .page-header__wrapper {
   display: flex;
-  //border: 1px solid black;
   min-height: 64px;
 }
 .page-header__logo {
@@ -16,8 +16,6 @@
   margin: 0;
   margin-top: 10px;
   padding-left: 20px;
-  // для сетки временно
-  //border: 1px solid orange;
 }
 .page-header__logo-image {
   display: block;
@@ -28,18 +26,12 @@
     height: 18px;
   }
 }
-
-
 .page-header__name {
-
   width: 101px;
   height: 18px;
   margin-left: 57px;
   margin-top: 23px;
-  // для сетки временно
-  /*border: 1px solid blue;*/
 }
-
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
@@ -47,7 +39,6 @@
     width: 707px;
     margin: 0 auto ;
     margin-top: 14px;
-    //
     min-height: 58px;
   }
   .page-header__wrapper {
@@ -72,7 +63,6 @@
     }
   }
 }
-
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1219px;

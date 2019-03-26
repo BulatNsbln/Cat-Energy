@@ -2,27 +2,26 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-
   padding: 0;
   margin: 0;
   margin-top: 40px;
-  //
   min-height: 163px;
+
   border: 0 none;
 }
 .profile__item-label {
+  margin-left: 19px;
+  margin-bottom: 15px;
+
   color: #222222;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin-left: 19px;
-  margin-bottom: 15px;
 }
 .profile__item-input {
   height: 40px;
-  border: 1px solid #e6e6e6;
   padding-left: 15px;
 
   color: #444444;
@@ -32,6 +31,8 @@
   line-height: 18px;
   text-transform: uppercase;
   outline-color: #444444;
+
+  border: 1px solid #e6e6e6;
   &:hover {
     border-color: #cdcdcd;
   }
@@ -55,21 +56,21 @@
   .profile__list {
     margin-top: 68px;
     width: 100%;
-    //
     min-height: 200px;
   }
   .profile__item-label {
-    font-size: 20px;
-    line-height: 20px;
     margin-left: 2px;
     margin-bottom: 28px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
   .profile__item-input {
+    padding-left: 20px;
+
     color: #444444;
     font-size: 20px;
     line-height: 20px;
-    padding-left: 20px;
-
     &_1 {
       width: 545px;
     }
@@ -89,7 +90,6 @@
     margin: 0;
     margin-left: 0px;
     width: 580px;
-    //
     min-height: 200px;
   }
   .profile__item-input {

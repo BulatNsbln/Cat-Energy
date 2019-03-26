@@ -1,8 +1,6 @@
 .page-main {
   width: 320px;
   margin: 0 auto;
-
-  //
 }
 
 .page-main__header {
@@ -11,8 +9,6 @@
   margin: 0 auto;
   margin-top: 4px;
   background: url("../../img/index-background-mobile.png") no-repeat;
-  //
-  //border: 1px solid black;
   min-height: 480px;
 }
 
@@ -48,7 +44,6 @@
   padding: 10px 73px;
   text-decoration: none;
   color: #ffffff;
-
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -83,7 +78,6 @@
     width: 709px;
     margin-top: 50px;
     background: none;
-    //
     min-height: 806px;
   }
   .page-main__header-image {
@@ -132,9 +126,9 @@
   }
   .page-main__header {
     position: relative;
+
     width: 1220px;
     margin-top: 12px;
-    //
     min-height: 555px;
   }
   .page-main__header-title {
@@ -144,6 +138,7 @@
   .page-main__header-button {
     top: 235px;
     left: 80px;
+
     min-height: 20px;
   }
   .page-main__header-text {
@@ -153,8 +148,10 @@
     position: absolute;
     top: -97px;
     left: 450px;
+
     width: 552px;
     height: 499px;
+
     background: url("../../img/index-can-desktop.png.png") no-repeat;
   }
   .page-main__header-background-container {
@@ -167,11 +164,6 @@
     background: url("../../img/index-background-desktop.jpg.png") no-repeat;
     z-index: -1;
   }
-
-
-
-
-
   .page-main__header-button_top  {
     display: inline;
   }

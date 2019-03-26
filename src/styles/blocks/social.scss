@@ -97,6 +97,11 @@
       display: none;
     }
   }
+  .social__item {
+    &_fb {
+      margin-top: -5px;
+    }
+  }
   .social__link-img {
     &_vk {
       width: 30px;

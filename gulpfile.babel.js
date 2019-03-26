@@ -39,17 +39,17 @@ const argv = yargs.argv,
 				"./src/views/*.html",
 				"./src/views/pages/*.html"
 			],
-			dist: "./dist/",
+			dist: "./build/",
 			watch: "./src/views/**/*.html"
 		},
 		styles: {
 			src: "./src/styles/main.scss",
-			dist: "./dist/styles/",
+			dist: "./build/styles/",
 			watch: "./src/styles/**/*.scss"
 		},
 		scripts: {
 			src: "./src/js/main.js",
-			dist: "./dist/js/",
+			dist: "./build/js/",
 			watch: "./src/js/**/*.js"
 		},
 		images: {
@@ -58,41 +58,41 @@ const argv = yargs.argv,
 				"!./src/img/svg/*.svg",
 				"!./src/img/favicon.{jpg,jpeg,png,gif}"
 			],
-			dist: "./dist/img/",
+			dist: "./build/img/",
 			watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
 		},
 		webp: {
 			src: "./src/img/**/*_webp.{jpg,jpeg,png}",
-			dist: "./dist/img/",
+			dist: "./build/img/",
 			watch: "./src/img/**/*_webp.{jpg,jpeg,png}"
 		},
 		sprites: {
 			src: "./src/img/svg/*.svg",
-			dist: "./dist/img/sprites/",
+			dist: "./build/img/sprites/",
 			watch: "./src/img/svg/*.svg"
 		},
 		favicons: {
 			src: "./src/img/favicon.{jpg,jpeg,png,gif}",
-			dist: "./dist/img/favicons/",
+			dist: "./build/img/favicons/",
 		},
 		server_config: {
 			src: "./src/.htaccess",
-			dist: "./dist/"
+			dist: "./build/"
 		},
 		fonts: {
 			src: "./src/fonts/Oswald/*.{woff,ttf}",
-			dist: "./dist/fonts/Oswald"
+			dist: "./build/fonts/Oswald"
 		},
 		svg: {
 			src: "./src/img/svg/*.{svg}",
-			dist: "./dist/img/svg"
+			dist: "./build/img/svg"
 		}
 	};
 
 export const server = () => {
 	browsersync.init({
 		injectChanges: true,
-		server: "./dist/",
+		server: "./build/",
 		port: 4000,
 		tunnel: true,
 		notify: true
@@ -108,7 +108,7 @@ export const watchCode = () => {
 	gulp.watch(paths.sprites.watch, sprites);
 };
 
-export const cleanFiles = () => gulp.src("./dist/**/", {read: false})
+export const cleanFiles = () => gulp.src("./build/**/", {read: false})
 	.pipe(clean())
 	.pipe(debug({
 		"title": "Cleaning..."

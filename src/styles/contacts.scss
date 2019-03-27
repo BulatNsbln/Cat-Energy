@@ -30,7 +30,7 @@
 .contacts__map-container {
   min-height: 362px;
 
-  background: url("../../img/map-mobile.png") no-repeat;
+  background: url("../img/map-mobile.png") no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,7 +67,7 @@
   .contacts__map-container {
     min-height: 396px;
 
-    background: url("../../img/map-tablet.png") no-repeat;
+    background: url("../img/map-tablet.png") no-repeat;
   }
 }
 @media (min-width: $desktop-width) {
@@ -90,7 +90,7 @@
   .contacts__map-container {
     min-height: 400px;
 
-    background: url("../../img/map-desktop.png") no-repeat;
+    background: url("../img/map-desktop.png") no-repeat;
   }
   .contacts__title {
     margin: 0;

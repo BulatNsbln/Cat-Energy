@@ -55,7 +55,7 @@
     width: 35px;
     height: 50px;
 
-    background: url("../../img/icon-cat-slim.svg");
+    background: url("../img/icon-cat-slim.svg");
 
     content: '';
   }
@@ -82,7 +82,7 @@
     top: 38px;
     width: 67px;
     height: 28px;
-    background: url("../../img/icon-cat-pro.svg");
+    background: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -118,7 +118,7 @@
   &:hover::after {
     width: 33px;
 
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
   &::after {
     position: absolute;
@@ -128,7 +128,7 @@
     width: 24px;
     height: 11px;
 
-    background: url("../../img/icon-right-arrow-long.svg");
+    background: url("../img/icon-right-arrow-long.svg");
 
     content: "";
   }
@@ -238,7 +238,7 @@
       width: 70px;
       height: 97px;
 
-      background: url("../../img/cat-slim.svg.png") no-repeat;
+      background: url("../img/cat-slim.svg.png") no-repeat;
     }
     &_pro::after {
       left: 32px;
@@ -247,7 +247,7 @@
       width: 134px;
       height: 56px;
 
-      background: url("../../img/cat-pro.svg.png") no-repeat;
+      background: url("../img/cat-pro.svg.png") no-repeat;
     }
   }
   .categories__item-text {

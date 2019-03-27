@@ -36,11 +36,11 @@ const argv = yargs.argv,
 	paths = {
 		views: {
 			src: [
-				"./src/views/*.html",
-				"./src/views/pages/*.html"
+				"./src/*.html",
+				"./src/pages/*.html"
 			],
 			dist: "./build/",
-			watch: "./src/views/**/*.html"
+			watch: "./src/**/*.html"
 		},
 		styles: {
 			src: "./src/styles/main.scss",
@@ -121,7 +121,7 @@ export const serverConfig = () => gulp.src(paths.server_config.src)
 	}));
 
 export const smartGrid = cb => {
-	smartgrid("./src/styles/utils", {
+	smartgrid("./src/styles/blocks", {
 		outputStyle: "scss",
 		filename: "_smart-grid",
 		columns: 12, // number of grid columns

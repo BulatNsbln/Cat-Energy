@@ -92,6 +92,8 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  cursor: pointer;
 }
 .example__compare {
   margin-top: 40px;
@@ -155,10 +157,10 @@
   height: 240px;
 }
 .example__compare_prev .example__compare-photo {
-  background: url("../../img/before-mobile.png") no-repeat;
+  background: url("../img/before-mobile.png") no-repeat;
 }
 .example__compare_next .example__compare-photo {
-  background: url("../../img/after-mobile.png") no-repeat center;
+  background: url("../img/after-mobile.png") no-repeat center;
 }
 .example__compare-background-wrapper {
   display: none;
@@ -247,14 +249,16 @@
     position: relative;
     z-index: 2;
 
-    width: 636px;
+    width: 690px;
     height: 517px;
     margin-left: 45px;
   }
   .example__compare_prev .example__compare-photo {
-    background: url("../../img/Before-after-tablet.png") no-repeat;
+    background: url("../img/before-desktop.png.png") no-repeat;
   }
-  //
+  .example__compare_next .example__compare-photo {
+    background: url("../img/after-desktop.png.png") no-repeat;
+  }
   .example__compare-slider_toggle {
     z-index: 2;
 
@@ -264,6 +268,7 @@
     font-size: 20px;
 
     border-bottom: 1px dotted #bebebe;
+
     &:hover {
       border-bottom: 1px solid #989898;
     }
@@ -272,6 +277,17 @@
     margin-top: 20px;
   }
   .example__compare_prev .example__compare-indicator {
+    width: 428px;
+    height: 6px;
+    margin: 7px 20px 0 20px;
+
+    background-color: #dcdcdc;
+    border: 1px solid lightgray;
+    &::before {
+      display: none;
+    }
+  }
+  .example__compare_next .example__compare-indicator {
     width: 428px;
     height: 6px;
     margin: 7px 20px 0 20px;
@@ -359,7 +375,7 @@
     margin-left: 157px;
   }
   .example__compare_prev .example__compare-photo {
-    background: url("../../img/Before-after-desktop.png") no-repeat;
+    background: url("../img/before-desktop.png.png") no-repeat;
   }
   .example__compare-slider {
     margin-top: 40px;

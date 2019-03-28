@@ -1,4 +1,4 @@
-# Cat-Energy
+# [DEMO](https://bulatnsbln.github.io/Cat-Energy/)
 
 1. git clone 
 2. cd Cat-Energy

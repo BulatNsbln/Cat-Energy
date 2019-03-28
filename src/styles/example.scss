@@ -254,10 +254,12 @@
     margin-left: 45px;
   }
   .example__compare_prev .example__compare-photo {
-    background: url("../img/before-desktop.png.png") no-repeat;
+    //background: url("../img/before-desktop.png.png") no-repeat;
+    background-image: none;
   }
   .example__compare_next .example__compare-photo {
-    background: url("../img/after-desktop.png.png") no-repeat;
+    //background: url("../img/after-desktop.png.png") no-repeat;
+    background-image: none;
   }
   .example__compare-slider_toggle {
     z-index: 2;
@@ -330,6 +332,35 @@
 
       background-color: #68b738;
       border-radius: 50%;
+    }
+  }
+
+
+  .example__compare-photo {
+    position: relative;
+    width: 690px;
+    height: 517px;
+
+
+    &_prev {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 690px;
+      height: 517px;
+
+      background: url("../img/before-desktop.png.png") no-repeat;
+    }
+    &_next {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 690px;
+      height: 517px;
+
+      background: url("../img/after-desktop.png.png") no-repeat;
     }
   }
 }
